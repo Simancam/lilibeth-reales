@@ -1,0 +1,49 @@
+---
+
+---
+
+<div class="bg-white">
+  <nav class="flex justify-between items-center p-4 lg:p-5">
+    <div class="flex items-center logo">
+      <img src="images/logo/logo.png" alt="Logo" class="h-12 mr-2">
+      <span class="text-lg lg:text-md font-semibold">Dra. Lilibeth Reales</span>
+    </div>
+    <div class="flex items-center">
+      <input type="checkbox" id="menu-toggle" class="hidden" />
+      <label for="menu-toggle" class="cursor-pointer md:hidden mr-4 bi bi-list" id="menuButton"></label>
+      <div id="navbarNav" class="hidden md:flex space-x-4">
+        <a href="/" class="nav-item">Home</a>
+        <a href="/services" class="nav-item">Servicios</a>
+        <a href="/experiences" class="nav-item">Experiencias</a>
+        <a href="/contact" class="nav-item">Contactos</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style>
+.nav-item {
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.nav-item {
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+</style>

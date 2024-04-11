@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/navbar.astro";
+import Contactos from "../sections/contactos.astro";
+import Footer from "../sections/footer.astro"
+import Map from "../sections/map.astro";
+import WspBtn from "../components/wspBtn.astro";
+---
+
+<Layout title="Contactos">
+    <Navbar/>
+    <div class="animate-blurred-fade-in">
+        <Contactos/>
+        <Map/>
+    </div>
+    <Footer/>
+    <WspBtn/>
+</Layout>
