@@ -2,9 +2,9 @@
 
 ---
 
-<section class="p-20 text-center">
-    <h2 class="text-4xl font-bold mb-12">Contactos</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mb-8">
+<section class="p-5 md:p-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 md:mb-12">Contactos</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-items-center mb-4 md:mb-8">
         <div class="text-center">
             <i class="bi bi-geo-alt-fill contact-icon"></i>
             <p class="mt-2">Carrera 50 #100-23, Casa 5</p>
@@ -14,13 +14,16 @@
             <p class="mt-2">+57 300 3568920</p>
         </div>
         <div class="text-center">
-            <i class="bi bi-clock-fill contact-icon"></i>
-            <p class="mt-2">Lunes a Sabado - 8am a 6pm</p>
+            <a href="https://api.whatsapp.com/send?phone=573003568920" target="_blank">
+                <i class="bi bi-whatsapp contact-icon"></i>
+            </a>
+            <p class="mt-2">+57 300 1234567</p> <!-- Añade tu número de WhatsApp aquí -->
         </div>
-    </div>
-
-    <div class="flex justify-center gap-8 mt-14">
-        <div class="text-center mr-32">
+        <div class="text-center">
+            <i class="bi bi-clock-fill contact-icon"></i>
+            <p class="mt-2">Lunes a Sábado - 8am a 6pm</p>
+        </div>
+        <div class="text-center">
             <a href="https://www.instagram.com/dra.lilibethreales/" target="_blank">
                 <i class="bi bi-instagram contact-icon"></i>
             </a>
@@ -35,10 +38,18 @@
     </div>
 </section>
 
+
+
 <style>
     .contact-icon {
-        font-size: 2rem; /* Tamaño del ícono */
+    font-size: 1.5rem; /* Tamaño más pequeño para pantallas pequeñas */
+}
+
+@media (min-width: 768px) { /* Ajustes para pantallas medianas y grandes */
+    .contact-icon {
+        font-size: 2rem;
     }
+}
 </style>
 
 
