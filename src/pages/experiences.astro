@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/navbar.astro";
+import Experiencias from "../sections/experiencias.astro";
+import Footer from "../sections/footer.astro";
+import WspBtn from "../components/wspBtn.astro";
+---
+
+<Layout title="Experiencias">
+    <Navbar/>
+    <div class="animate-blurred-fade-in">
+        <Experiencias/>
+    </div>
+    <footer class="h-12 leading-12">
+        <Footer/>
+    </footer>
+    <WspBtn/>
+</Layout>

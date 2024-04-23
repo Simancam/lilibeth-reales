@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/navbar.astro';
+import Banner from '../components/banner.astro';
+import Info from  '../sections/info.astro';
+import Servicios from  '../sections/servicios.astro';
+import Footer from  '../sections/footer.astro';
+import WspBtn from "../components/wspBtn.astro";
+---
+
+<Layout title="Dra. Lilibeth Reales">
+	<Navbar/>
+	<Banner/>
+	<div class="animate-blurred-fade-in">
+		<Info/>
+	</div>
+	<div class="mt-5">
+		<Servicios/>
+	</div>
+	<Footer/>
+	<WspBtn/>
+</Layout>
